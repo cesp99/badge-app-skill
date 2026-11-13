@@ -1,0 +1,16 @@
+{
+  "name": "badge-app-skill",
+  "owner": { "name": "Carlo Esposito", "url": "https://github.com/cesp99" },
+  "metadata": {
+    "description": "Claude Code skill for building Solana Breakpoint 2026 badge apps."
+  },
+  "plugins": [
+    {
+      "name": "badge-app",
+      "source": "./",
+      "description": "Build, fix, verify and package Lua apps for the Solana Breakpoint 2026 badge (Solana OS, ESP32-C5).",
+      "version": "1.0.0",
+      "category": "development"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "badge-app",
+  "description": "Build, fix, verify and package Lua apps for the Solana Breakpoint 2026 badge (Solana OS, ESP32-C5).",
+  "version": "1.0.0",
+  "author": { "name": "Carlo Esposito", "url": "https://github.com/cesp99" },
+  "homepage": "https://github.com/cesp99/badge-app-skill",
+  "repository": "https://github.com/cesp99/badge-app-skill",
+  "license": "MIT",
+  "keywords": ["solana", "breakpoint", "badge", "lua", "esp32", "skill"]
+}

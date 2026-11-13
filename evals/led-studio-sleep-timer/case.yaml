@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: led-studio-sleep-timer
+expected_outcome: |
+  led-studio/main.lua gains a sleep timer setting (Off/15/30/60 min) that turns off the kept
+  glow after the chosen time, app.json version is bumped, and the app still compiles and
+  passes badgeapp check without breaking existing features.
+context:
+  scaffold_script: place-files.sh

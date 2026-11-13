@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: mesh-poke-app
+expected_outcome: |
+  A badge app that lists nearby badges, sends a poke (heart / wave / high five) to one over
+  the mesh, and on receiving shows the sender and blinks the LEDs. Uses the mesh API as
+  documented in LUA_API.md, declares mesh and led permissions, compiles and passes check.

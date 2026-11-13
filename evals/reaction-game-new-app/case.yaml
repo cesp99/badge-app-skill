@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: reaction-game-new-app
+expected_outcome: |
+  A complete badge app folder (main.lua + app.json) for a reaction-time game: random delay,
+  LEDs flash green with GO, SELECT measures the reaction in ms, early press is a false start,
+  best time persisted with storage. Compiles under Lua 5.5 and passes badgeapp check.
