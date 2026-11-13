@@ -64,8 +64,12 @@ fi
 
 # Source: a local checkout if this script is run from one, else the GitHub tarball.
 SRC=""
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" 2>/dev/null && pwd || true)"
-if [ -n "$SCRIPT_DIR" ] && [ -f "$SCRIPT_DIR/skills/$NAME/SKILL.md" ]; then
+# (When piped through `curl | bash` there is no script file, so always download.)
+SCRIPT_DIR=""
+if [ -n "${BASH_SOURCE[0]:-}" ] && [ -f "${BASH_SOURCE[0]}" ]; then
+  SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+fi
+if [ -n "$SCRIPT_DIR" ] && [ -f "$SCRIPT_DIR/skills/$NAME/SKILL.md" ] && [ -f "$SCRIPT_DIR/install.sh" ]; then
   SRC="$SCRIPT_DIR/skills/$NAME"
   say "installing from local checkout $SCRIPT_DIR"
 else
